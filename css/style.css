@@ -1,0 +1,355 @@
+/* ну что,начинаем CSS дискотеку?!=) */
+/* Для тренировки подключим 1 шрифт из GOOGLE FONTS:это будет шрифт основного текста */
+/* Теперь подключим дополнительный шрифт с помощью плагина гугл фонтс*/
+/* Жмем F1+пишем Google Fonts+выбираем import+пишем имя шрифта+убираем лишнее+добавляем кавычки и запись: &display=swap&subset=cyrillic-ext(если текст на кириллице-русском) или &display=swap(если на латинице-английском) */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap&subset=cyrillic-ext");
+/* Ну и третий вид подключения-шрифт которого нету в гугл фонтс.))) */
+
+/* обнуляющий стиль начало */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: rgb(128, 128, 128);
+}
+/* Обнуляющий стиль конец */
+/* шапка */
+
+.header {
+  background: rgb(48, 95, 97);
+  position: fixed;
+  width: 100%;
+
+  /* padding: 15px 0 15px 0; */
+}
+.menu {
+  width: 600px;
+  margin: 0 auto;
+}
+.list {
+  position: relative;
+}
+.list > li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.list > li:hover .sublist {
+  display: block;
+}
+.link {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 15px 0 15px 0;
+  display: inline-block;
+}
+.link:hover {
+  color: yellow;
+  font-size: 19px;
+  text-decoration: underline yellow;
+}
+.sublist {
+  position: absolute;
+  background: rgb(60, 134, 134);
+  padding-top: 10px;
+  display: none;
+}
+.sublist > li {
+  margin: 0 0 10px 0;
+}
+.sublist > li:hover .subsublist {
+  display: block;
+}
+.sublink {
+  font-size: 16px;
+  color: aliceblue;
+  padding: 10px;
+}
+.sublink:hover {
+  color: yellow;
+  text-decoration: underline yellow;
+}
+.subsublist {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgb(105, 64, 64);
+  padding-top: 10px;
+  display: none;
+}
+.subsublist > li {
+  margin: 0 0 10px 0;
+}
+.subsublist > li:hover .subsubsublist {
+  display: block;
+}
+.subsublink {
+  font-size: 16px;
+  color: aliceblue;
+  padding: 10px;
+}
+.subsublink:hover {
+  color: yellow;
+  text-decoration: underline yellow;
+}
+.subsubsublist {
+  position: absolute;
+  top: 60%;
+  left: 100%;
+  background: rgb(110, 83, 136);
+  padding-top: 10px;
+  display: none;
+}
+.subsubsublist > li {
+  margin: 0 0 10px 0;
+}
+.subsubsublink {
+  font-size: 16px;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.subsubsublink:hover {
+  color: yellow;
+  text-decoration: underline yellow;
+}
+/* ............................ */
+
+.
+/* машинка */
+.main {
+  padding-top: 300px;
+}
+/* верх машинки */
+.top-main {
+  border-radius: 400px 400px 50px 0px / 150px 150px 0px 0px;
+  background: url(../img/4-10120.jpg);
+  width: 400px;
+  height: 130px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+/* окно справа */
+.top-main1 {
+  border-radius: 106px 150px 0px 0px / 0px 100px 33px 31px;
+  border: 2px solid rgb(45, 70, 53);
+  background: rgba(123, 170, 123, 0.808);
+  width: 170px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+  left: 210px;
+}
+.top-main1:hover {
+  background: url(../img/france.jpg) center/cover no-repeat;
+}
+/* .top-main2 {
+  border-radius: 50%;
+  border: 7px solid black;
+  background: rgba(69, 109, 69, 0.815);
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: -50px;
+  left: 378px;
+  z-index: 2;
+} */
+/* окно слева */
+.top-main3 {
+  border-radius: 153px 91px 50px 0px / 73px 0px 0px 0px;
+  border: 2px solid rgb(45, 70, 53);
+  background: rgba(123, 170, 123, 0.815);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 100px;
+  width: 170px;
+}
+.top-main3:hover {
+  background: url(../img/babyfrance.jpg) center/cover no-repeat;
+}
+/* весь низ */
+.bottom {
+  position: relative;
+  top: 89px;
+  width: 800px;
+}
+/* нижняя часть слева */
+.bottom-main1 {
+  border-radius: 200px 200px 50px 0px / 170px 0px 0px 0px;
+  background: rgb(192, 192, 53);
+  width: 200px;
+  height: 170px;
+  position: absolute;
+  left: 150px;
+}
+/* нижняя часть справа */
+.bottom-main2 {
+  background: rgb(192, 192, 53);
+  border-radius: 220px 342px 50px 0px / 0px 66px 0px 0px;
+  width: 400px;
+  height: 170px;
+  position: absolute;
+  left: 350px;
+}
+/* передняя дверь */
+.bottom-main2b {
+  border-radius: 38px 6px 50px 38px / 0px 0px 25px 1px;
+  width: 170px;
+  height: 160px;
+  border: 2px solid rgb(45, 70, 53);
+  position: absolute;
+  left: 60px;
+}
+/* ручка передней двери */
+.bottom-main2c {
+  border-radius: 38px 6px 59px 59px / 0px 0px 31px 31px;
+  height: 20px;
+  width: 35px;
+  border: 2px solid rgb(45, 70, 53);
+  background: rgb(74, 114, 87);
+  position: absolute;
+  left: 70px;
+  top: 15px;
+}
+/* ручка задней двери */
+.bottom-main1c {
+  border-radius: 38px 6px 59px 59px / 0px 0px 31px 31px;
+  height: 20px;
+  width: 35px;
+  border: 2px solid rgb(45, 70, 53);
+  background: rgb(74, 114, 87);
+  position: absolute;
+  left: 90px;
+  top: 15px;
+}
+/* задняя дверь */
+.bottom-main1b {
+  border-radius: 38px 6px 26px 38px / 0px 0px 1px 1px;
+  width: 170px;
+  height: 160px;
+  border: 2px solid rgb(45, 70, 53);
+  position: absolute;
+  left: 80px;
+  z-index: 5;
+}
+/* задняя фара */
+.bottom-main1a {
+  height: 40px;
+  width: 20px;
+  border-radius: 100%;
+  color: bisque;
+  border: 2px solid black;
+  background: bisque;
+  position: absolute;
+  left: 2px;
+  top: 40px;
+}
+.bottom-main1a:hover {
+  box-shadow: 2px 2px 4px 10px red;
+}
+/* передняя фара */
+.bottom-main2a {
+  height: 40px;
+  width: 20px;
+  border-radius: 100%;
+  color: bisque;
+  border: 2px solid black;
+  background: bisque;
+  position: absolute;
+  left: 360px;
+}
+.bottom-main2a:hover {
+  box-shadow: 2px 2px 4px 10px yellow;
+}
+/* заднее колесо */
+.bottom-main3 {
+  background: rgb(66, 66, 66);
+  background: radial-gradient(circle, rgba(66, 66, 66, 1) 48%, rgba(182, 178, 178, 1) 64%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(53, 53, 53);
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  z-index: 8;
+}
+.bottom-main3a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dotted rgb(255, 255, 255);
+  background: rgb(88, 81, 81);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+/* переднее колесо */
+.bottom-main4 {
+  background: rgb(66, 66, 66);
+  background: radial-gradient(circle, rgba(66, 66, 66, 1) 48%, rgba(182, 178, 178, 1) 64%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(53, 53, 53);
+  position: absolute;
+  top: 70px;
+  left: 500px;
+  z-index: 7;
+}
+.bottom-main4a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dotted rgb(255, 255, 255);
+  background: rgb(88, 81, 81);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+/* низ машинки */
+.bottom-main5 {
+  height: 20px;
+  width: 620px;
+  border-radius: 30px;
+  background: rgb(126, 126, 72);
+  position: absolute;
+  top: 150px;
+  left: 135px;
+  z-index: 6;
+}
+.bottom-main5:hover {
+  background: rgb(235, 235, 129);
+}
